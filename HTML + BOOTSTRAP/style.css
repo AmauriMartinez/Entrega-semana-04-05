@@ -1,0 +1,120 @@
+/* --- CONFIGURAÇÕES GLOBAIS E PALETA DE CORES --- */
+:root {
+	--cor-pergaminho: #FAF8F0;
+	--cor-verde-floresta: #2A4B3A;
+	--cor-tinta-escura: #3A3A3A;
+	--cor-ouro-antigo: #D4AF37;
+	--cor-pergaminho-escuro: #e8e5d9;
+	--cor-pergaminho-claro: #FFFFFF;
+}
+
+body {
+	background-color: var(--cor-pergaminho);
+	color: var(--cor-tinta-escura);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- FONTES TEMÁTICAS --- */
+.logo-font, .nome-livro, .titulo-secao {
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* --- PERSONALIZAÇÃO DOS COMPONENTES BOOTSTRAP --- */
+
+/* Cabeçalho (Navbar) */
+#meu-header {
+	background-color: var(--cor-verde-floresta) !important;
+	height: 5rem;
+}
+
+.nav-link {
+	transition: all 0.3s ease;
+}
+
+	.nav-link:hover {
+		color: var(--cor-ouro-antigo) !important;
+		transform: translateY(-2px);
+	}
+
+/* Banner */
+.banner {
+	height: 50vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/imagem/mapa-terra-media.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* Seção de Obras */
+#obras {
+	background-color: var(--cor-pergaminho-escuro);
+}
+
+.titulo-secao {
+	color: var(--cor-verde-floresta);
+}
+
+/* Cards */
+.card {
+	border: none;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+	height: 200px;
+	object-fit: cover;
+}
+
+.nome-livro {
+	color: var(--cor-verde-floresta);
+}
+
+/* Efeito de hover que criamos antes, agora em uma classe separada */
+.card-hover {
+	transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+	.card-hover:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 0 25px rgba(212, 175, 55, 0.5), 0 10px 20px rgba(0,0,0,0.2);
+	}
+
+/* Rodapé */
+footer {
+	background-color: var(--cor-verde-floresta);
+}
+
+.banner {
+	height: 50vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/imagem/mapa-terra-media.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--cor-pergaminho-claro);
+}
+
+.banner-texto h1 {
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 3rem;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.banner-texto p {
+	font-size: 1.2rem;
+}
+
+.botao-banner {
+	display: inline-block;
+	margin-top: 2rem;
+	padding: 0.8rem 2rem;
+	background-color: var(--cor-pergaminho-claro);
+	color: var(--cor-verde-floresta);
+	border: 2px solid var(--cor-pergaminho-claro);
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 50px;
+	transition: all 0.3s ease-out;
+}

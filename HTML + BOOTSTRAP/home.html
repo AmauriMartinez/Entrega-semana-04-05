@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tolkien 101 - Versão Bootstrap</title>
+    <link rel="icon" href="./assets/imagem/icon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://kit.fontawesome.com/b581796bdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark" id="meu-header">
+        <div class="container">
+            <a class="navbar-brand logo-font" href="#">Tolkien 101</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#intro">Introdução</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#obras">Obras Principais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#autor">Sobre o Autor</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="intro">
+        <div class="banner d-flex justify-content-center align-items-center text-center text-white">
+            <div class="banner-texto">
+                <h1 class="display-4 fw-bold">Explore o Universo de J.R.R. Tolkien</h1>
+                <p class="lead">Um guia completo para as eras, os povos e as lendas da Terra-média.</p>
+                <a href="#obras" class="btn btn-lg btn-light fw-bold">Explore as Obras</a>
+            </div>
+        </div>
+
+        <div class="container text-center my-5">
+            <h2 class="titulo-secao">Bem-vindo à Terra-média</h2>
+            <p class="col-lg-8 mx-auto">Este site é um portal para o vasto e detalhado universo criado por J.R.R. Tolkien. Aqui você encontrará informações sobre suas obras mais importantes, desde a criação do mundo em "O Silmarillion" até a épica Guerra do Anel. Navegue pelas seções para descobrir mais sobre cada livro e o autor por trás das lendas.</p>
+        </div>
+    </main>
+
+    <section id="obras" class="py-5">
+        <div class="container">
+            <h2 class="titulo-secao mb-4">Obras Principais</h2>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="./assets/imagem/silmarillion_cover.jpg" class="card-img-top" alt="Capa do livro O Silmarillion">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title nome-livro">O Silmarillion</h3>
+                            <p class="card-text flex-grow-1">A história da criação de Arda e os contos da Primeira Era, a base de toda a mitologia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="./assets/imagem/hobbit_cover.jpg" class="card-img-top" alt="Capa do livro O Hobbit">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title nome-livro">O Hobbit</h3>
+                            <p class="card-text flex-grow-1">A jornada inesperada de Bilbo Bolseiro, que encontra o Um Anel e enfrenta o dragão Smaug.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="./assets/imagem/sociedade-do-anel_cover.jpg" class="card-img-top" alt="Capa do livro A Sociedade do Anel">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title nome-livro">A Sociedade do Anel</h3>
+                            <p class="card-text flex-grow-1">O início da jornada de Frodo para destruir o Um Anel e salvar a Terra-média.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="./assets/imagem/duas-torres_cover.jpg" class="card-img-top" alt="Capa do livro As Duas Torres">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title nome-livro">As Duas Torres</h3>
+                            <p class="card-text flex-grow-1">A Sociedade se divide. Enquanto Frodo e Sam seguem para Mordor, seus companheiros lutam na Batalha do Abismo de Helm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="./assets/imagem/retorno-do-rei_cover.jpg" class="card-img-top" alt="Capa do livro O Retorno do Rei">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title nome-livro">O Retorno do Rei</h3>
+                            <p class="card-text flex-grow-1">A conclusão épica da Guerra do Anel, com a Batalha de Minas Tirith e a jornada final de Frodo na Montanha da Perdição.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="./assets/imagem/apendices_cover.jpg" class="card-img-top" alt="Capa dos Apêndices">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title nome-livro">Apêndices</h3>
+                            <p class="card-text flex-grow-1">Informações detalhadas sobre a cronologia, línguas, árvores genealógicas e a história da Terra-média.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="info-institucional">
+                <p class="mb-0">&copy; 2025 Tolkien 101 | Todos os direitos reservados.</p>
+            </div>
+            <div class="redes-sociais">
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-reddit"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
